@@ -58,4 +58,4 @@ Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita
 - Penanganan outlier
 <br>Visualisasi data yang kita miliki
 <image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_with_outlier.png" width=600/>
-<div style="align: center;"><em>Gambar 1. sebelum metode IQR dijalankan</em></div>
+<dl><dd><em>Gambar 1. sebelum metode IQR dijalankan</em></dd></dl>
