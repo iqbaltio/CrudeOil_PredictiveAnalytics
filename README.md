@@ -60,6 +60,11 @@ Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita
 <image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_with_outlier.png" width=600/>
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 1. sebelum metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
 
-Berikut visualisasi data yang sudah menerapkan metode IQR dengan menghapus data diluar IQR yaitu antara 25% dan 75%
+<br>Berikut visualisasi data yang sudah menerapkan metode IQR dengan menghapus data diluar IQR yaitu antara 25% dan 75%
 <image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_without_outlier.png" width=600/>
-<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 1. sebelum metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 2. sesudah metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
+
+- Unvariate Analysis
+<br>Fitur yang akan diprediksi pada kasus ini terfokus kepada fitur 'Close','High','Open','Close'
+<image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_unvariate.png" width=600/>
+<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 3. Univariate Analysis</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
