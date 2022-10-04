@@ -16,3 +16,36 @@ Teknik forecasting adalah teknik yang menggunakan data yang sudah ada atau data 
 ### Problem Statements
 Merujuk latar belakang yang sudah dipaparkan sebelumnya, bisa kita simpulkan bahwa permasalahan yang diangkat adalah :
 - Bagaimana cara memprediksi harga saham minyak mentah di masa yang akan datang ?
+
+### Goals
+Tujuan dari pembuatan proyek ini adalah :
+- Dapat memprediksi harga saham minyak mentah di masa yang akan datang menggunakan *machine Learning*
+- Membantu investor/pembeli membuat keputusan yang lebih baik disaat akan membeli saham minyak mentah
+
+### Solution Statements
+Solusi yang dilakukan untuk mencapai tujuan dari proyek ini adalah sebagai berikut :
+
+- Melakukan analisa dan pengolahan data yang bertujuan untuk dapat diproses menjadi data yang memberi pengetahuan bagi investor dan pengolahan data dilakukan agar bisa divisualisasikan agar mudah dipahami, dimengerti, ditelaah oleh investor. Berikut pengolahan yang dilakukan :
+  - Menghapus nilai yang menggandung *missing value* dan kolom yang tidak akan digunakan
+  - Menangani outlier yang ada pada dataset dengan metode IQR
+  - Menormalisasi data
+  - Membuat model yang berguna untuk melakukan prediksi
+  
+- Algoritma yang digunakan dalam membuat model untuk prediksi:
+  - *K-Nearest Neighbors*
+  - *Random Forest Regression*
+  - *Gradient Boosting Regression*
+
+- Menggunakan *Hyperparameter* dan *GridSearch* untuk membantu dalam memilih parameter terbaik yang akan digunakan pada prediksi
+
+### Data Understanding
+
+Dataset yang digunakan pada proyek kali ini adalah : [Crude Oil Nov 22 (CL=F)](https://finance.yahoo.com/quote/CL%3DF/history?p=CL%3DF)
+Dataset ini memiliki kolom seperti dataset price stok pada umumnya yaitu 7 kolom ["Date","Open","High","Low","Close","Adj Close","Volume"]. Pada saat ini dataset yang digunakan tak menggandung *missing value*, lalu penjelasan terkait setiap kolom sebagai berikut :
+- Date : Tanggal perdagangan berlangsung
+- Open : Harga pembukaan pada tanggal perdangangan berlangsung
+- High : Harga tertinggi pada tanggal perdangangan berlangsung
+- Low : Harga terendah pada tanggal perdangangan berlangsung
+- Close : Harga terakhir pada saat perdangan pada hari itu di tutup
+- Adj Close : Harga penutupan pada hari tersebut setelah disesuaikan
+- Volume : Volume transaksi yang terjadi pada tanggal perdagangan berlangsung
