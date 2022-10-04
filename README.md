@@ -59,3 +59,7 @@ Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita
 <br>Visualisasi data yang kita miliki
 <image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_with_outlier.png" width=600/>
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 1. sebelum metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
+
+Berikut visualisasi data yang sudah menerapkan metode IQR dengan menghapus data diluar IQR yaitu antara 25% dan 75%
+<image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_without_outlier.png" width=600/>
+<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 1. sebelum metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
