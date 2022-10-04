@@ -50,3 +50,11 @@ Dataset ini memiliki kolom seperti dataset price stok pada umumnya yaitu 7 kolom
 - Close : Harga terakhir pada saat perdangan pada hari itu di tutup
 - Adj Close : Harga penutupan pada hari tersebut setelah disesuaikan
 - Volume : Volume transaksi yang terjadi pada tanggal perdagangan berlangsung
+
+## Exploratory Data Analysis
+
+Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita untuk mencari korelasi, outlier, unvariate dan multivariate analisis dalam dataset kita. 
+
+- Penanganan outlier
+<br>Visualisasi data yang kita miliki
+<image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_with_outlier.png" width=600/>
