@@ -41,6 +41,7 @@ Solusi yang dilakukan untuk mencapai tujuan dari proyek ini adalah sebagai berik
 ### Data Understanding
 
 Dataset yang digunakan pada proyek kali ini adalah : [Crude Oil Nov 22 (CL=F)](https://finance.yahoo.com/quote/CL%3DF/history?p=CL%3DF)
+
 Dataset ini memiliki kolom seperti dataset price stok pada umumnya yaitu 7 kolom ["Date","Open","High","Low","Close","Adj Close","Volume"]. Pada saat ini dataset yang digunakan tak menggandung *missing value*, lalu penjelasan terkait setiap kolom sebagai berikut :
 - Date : Tanggal perdagangan berlangsung
 - Open : Harga pembukaan pada tanggal perdangangan berlangsung
