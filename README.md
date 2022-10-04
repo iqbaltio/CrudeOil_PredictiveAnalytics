@@ -71,4 +71,6 @@ Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 3. Univariate Analysis</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
 
 - Multivariate Analysis
-<br>Fitur yang akan diprediksi pada kasus ini terfokus kepada fitur 'Close','High','Open','Low'
+<br>Dapat kita simpulkan bahwa fitur 'Close' memiliki terkaitan antara fitur 'Open', 'Low', 'High'
+<image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_multivariate.png" width=600/>
+<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 3. multivariate Analysis</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
