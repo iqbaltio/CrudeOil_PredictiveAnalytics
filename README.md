@@ -145,3 +145,26 @@ Untuk evaluasi pada machine learning model ini, metrik yang saya gunakan adalah 
 | *Gradient Boosting* 	| 1626774.206643 	| 2385916015.821763 	|
 | *K-Nearest Neighbor*       	| 902175794.013505 	| 3794621316.670325 	|
 | *Random Forest*       | 166434.387352 | 2386956827.095893 |
+
+### Berikut adalah hasil akurasi dari beberapa model yang dipakai :
+| Model                 	| Accuracy(%)   	|
+|-----------------------	|----------	|
+| *Gradient Boosting* 	| 99.921065 	|
+| *Random Forest*        	| 99.921031 	|
+| *K-Nearest Neighbor*      | 99.874460 |
+
+### Kesimpulan
+
+Kesimpulan dari proyek ini adalah :
+- Model terbaik yang digunakan adalah *Gradient Boosting* dibandingkan *Random Forest*  dengan akurasi 99.921065%
+- Hasil Prediksi akan lebih akurat jika data lebih banyak
+
+### Daftar Pustaka
+
+- G. Sismanoglu, M. A. Onde, F. Kocer and O. K. Sahingoz, "Deep Learning Based Forecasting in Stock Market with Big Data Analytics," 2019 Scientific Meeting on Electrical-Electronics & Biomedical Engineering and Computer Science (EBBT), 2019, pp. 1-4, doi: 10.1109/EBBT.2019.8741818.
+
+- Matthias Feurer and Frank Hutter. Hyperparameter optimization. In: AutoML: Methods, Systems, Challenges, pages 3–38.
+
+- “Saham - PT bursa efek Indonesia.” [Online]. Available: https://www.idx.co.id/produk/saham/. [Accessed: 24-Sep-2022] 
+
+- M. M. Kumbure, C. Lohrmann, P. Luukka, and J. Porras, “Machine learning techniques and data for stock market forecasting: A literature review,” Expert Systems with Applications, vol. 197, p. 116659, 2022. 
