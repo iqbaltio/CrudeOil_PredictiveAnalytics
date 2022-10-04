@@ -65,6 +65,9 @@ Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 2. sesudah metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
 
 - Unvariate Analysis
-<br>Fitur yang akan diprediksi pada kasus ini terfokus kepada fitur 'Close','High','Open','Close'
+<br>Fitur yang akan diprediksi pada kasus ini terfokus kepada fitur 'Close','High','Open','Low'
 <image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_unvariate.png" width=600/>
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 3. Univariate Analysis</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
+
+- Multivariate Analysis
+<br>Fitur yang akan diprediksi pada kasus ini terfokus kepada fitur 'Close','High','Open','Low'
