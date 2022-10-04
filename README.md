@@ -1,8 +1,8 @@
-# Laporan Submission Pertama - Crude Oil Predictive
+# Laporan Submission Pertama - Crude Oil Predictive Analytics
 ---
 
 ## Domain Proyek
-Domain yang dipilih untuk proyek machine learning kali ini ada pada sektor keuangan dengan judul Crude Oil Predictive Analytics
+Domain yang dipilih untuk proyek machine learning kali ini ada pada sektor keuangan dengan judul Crude Oil Predictive Analytics.
 
 ### Latar Belakang
 Dunia saat ini mengalami krisis energi dan itu menjadi salah satu faktor harga-harga bahan pangan maupun nonpangan maka dari itu judul ini saya angkat dan menggunakan data yang terkait. Data yang saya angkat adalah dataset harga saham minyak mentah yang ada pada yahoo finance. Ada dua jenis pasar saham didunia ini, yaitu  pasar saham ekuitas yang berupa saham atau sebuah surat berharga kemudian ada pasar saham komoditas yang bisa berupa emas, tembaga nikel kemudian selain dari logam mulia tersebut komoditas juga mencakup seperti gandum, gula, kopi, dan lain-lainnya.
@@ -80,3 +80,68 @@ Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita
 <image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_multivariate.png" width=600/>
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 5. Corellation Matrix</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl><br>
 
+## Data Prepareration
+
+Sebelum kita melakukan modeling kita perlu melakukan beberapa langkah untuk mempersiapkan data, yaitu: 
+### Melakuakan penanganan *Missing Value*
+Pada dataset saya kali ini tidak memiliki *Missing Value* sehingga kita tidak perlu menghapus apapun
+
+### Melakukan pembagi dataset
+Kita akan membagi dataset kita menjadi train data dan test data sehingga sistem bisa menggunakan train data menjadi training model dan test data sebagai data yang memvalidasi akurat atau tidaknya. Rasio yang digunakan adalah 8:2, 8 train data dan 2 test data
+
+### Menghapus kolom yang tak digunakan
+Disini saya tidak menghapus kolom apapun karena saya memerlukan semua kolom yang sudah kita lihat dalam visualisasinya diatas.
+
+## Modeling
+Model yang akan digunakan proyek kali ini yaitu *Gradient Boosting*, *K-Nearest Neighbors*, dan *Random Forest*.
+
+### Gradient Boosting
+*Gradient Boosting* adalah sebuah algoritma pada machine learning yang menggunakan teknik *ensembel learning* dari *decision tree* untuk meprediksi nilai. *Gradient Boosting* mampu menangani data dan pattern yang kompleks. Untuk parameter yang digunakan pada model ini ada 3 yaitu:
+  - *learning_rate* : salah satu parameter training untuk menghitung nilai koreksi bobot pada waktu proses training, biasanya berada pada range 0 hingga 1, disini saya menggunakan nilai 0.01 untuk nilai *learning_rate* saya
+  - *n_estimators* : Jumlah tahapan yang akan dilakukan, disini saya menggunakan nilai 1000 untuk nilai *n_estimators* saya
+  - *criterion* : untuk menentukan kualitas dari pembagian data, disini saya menggunakan *friedman_mse* untuk *criterion* saya
+
+#### Kelebihan
+  - Hasil pemodelan lebih akurat
+  - Stabil
+#### Kekurangan
+  - Waktu pemrosesan yang cukup lama
+  - Tingkat kesulitan yang tinggi dalam pemilihan model
+
+### K-Nearest Neighbors
+*K-Nearest Neighbors* adalah sebuah algoritma pada *machine learning* yang bekerja dengan mengklasifikasikan data baru menggunakan kesamaan fitur untuk memprediksi nilai dari setiap data yang baru. Dengan kata lain, setiap data baru diberi nilai berdasarkan seberapa mirip titik tersebut dalam sebuah set pelatihan. Untuk parameter yang digunakan pada model ini ada 1 yaitu :
+  - *n_neighbors* : Jumlah tetangga untuk yang diperlukan untuk menentukan letak data baru, disini saya menggunakan nilai 4 untuk nilai *n_neighbors* saya
+
+#### Kelebihan
+  - Mudah diimplementasikan
+  - Efektif terhadap data yang besar
+#### Kekurangan
+  - Perlu menentukan nilai parameter K
+  - Rentan terhadap variabel yang tidak informatif
+
+### Random Forest
+*Random Forest* adalah sebuah algoritma pada *machine learning* yang bekerja menggunakan teknik *ensembel learning* untuk memprediksi suatu nilai. *Random Forest* dapat bekerja secara bersamaan dalam satu waktu, sehingga tingkat keberhasilan menjadi lebih tinggi. Untuk parameter yang digunakan pada model ini ada 2 yaitu :
+  - *n_estimators* : Jumlah tahapan yang akan dilakukan, disini saya menggunakan nilai 75 untuk nilai *n_estimators* saya
+  - *criterion* : untuk menentukan kualitas dari pembagian data, disini saya menggunakan *absolute_error* untuk *criterion* saya
+
+#### Kelebihan
+  - Dapat mengatasi training data yang besar secara efisien
+  - Dapat menangani *missing values*
+#### Kekurangan
+  - Kompleksitas yang tinggi
+  - Waktu pemrosesan yang lama
+
+Berdasarkan data diatas serta pada tahap modeling dan evaluasi, menurut saya ketiga algoritma bekerja cukup baik dalam memprediksi.
+
+## Evaluation
+Untuk evaluasi pada machine learning model ini, metrik yang saya gunakan adalah mean squared error (mse). Dimana metrik ini menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi.
+
+<image src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-50d568506216f6ab6402504298c570e2_l3.svg" width=500 />
+<br>
+
+### Berikut adalah hasil mse dari beberapa model yang dipakai :
+| Model                 	| Train    	| Test     	|
+|-----------------------	|----------	|----------	|
+| *Gradient Boosting* 	| 1626774.206643 	| 2385916015.821763 	|
+| *K-Nearest Neighbor*       	| 902175794.013505 	| 3794621316.670325 	|
+| *Random Forest*       | 166434.387352 | 2386956827.095893 |
