@@ -63,22 +63,22 @@ Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita
 
 <br>Berikut visualisasi data yang sudah menerapkan metode IQR dengan menghapus data diluar IQR yaitu antara 25% dan 75%
 
-<image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_without_outlier.png" width=600/>
-<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 2. sesudah metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl><br>
+![output_without_outlier](https://user-images.githubusercontent.com/77862455/193956899-b33b2ebc-17ae-42dd-a8f4-e9e9fc371d2f.png)
+<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 2. sesudah metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl><br>
 
 - Unvariate Analysis
 <br>Fitur yang akan diprediksi pada kasus ini terfokus kepada fitur 'Close','High','Open','Low'
-<image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_unvariate.png" width=600/>
+![output_unvariate](https://user-images.githubusercontent.com/77862455/193957070-4ee206d4-af5a-415a-9323-cea6f6eb6e3e.png)
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 3. Univariate Analysis</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl><br>
 
 - Multivariate Analysis
 <br>Dapat kita simpulkan bahwa fitur 'Close' memiliki terkaitan antara fitur 'Open', 'Low', 'High'
-<image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_multivariate.png" width=600/>
+![output_multivariate](https://user-images.githubusercontent.com/77862455/193957101-082743a4-e604-46c9-ae94-f40ff5a1324a.png)
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 4. multivariate Analysis</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl><br>
 
 - Corellation Matrix
 <br>Memvisualisasikan korelasi yang ada dengan menggunakan heatmap, pada data ini semua saling berkorelasi
-<image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_multivariate.png" width=600/>
+![output_corellation_matrix](https://user-images.githubusercontent.com/77862455/193957140-12303b4d-ad1c-4208-8140-39273fe96b12.png)
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 5. Corellation Matrix</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl><br>
 
 ## Data Prepareration
