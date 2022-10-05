@@ -142,7 +142,8 @@ Berdasarkan data diatas serta pada tahap modeling dan evaluasi, menurut saya ket
 ## Evaluation
 Untuk evaluasi pada machine learning model ini, metrik yang saya gunakan adalah mean squared error (mse). Dimana metrik ini menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi.
 
-<image src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-50d568506216f6ab6402504298c570e2_l3.svg" width=500 />
+![quicklatex com-50d568506216f6ab6402504298c570e2_l3](https://user-images.githubusercontent.com/77862455/193957779-69e094b5-6b04-4201-9ad1-b8a9c9fedcdc.svg)
+
 <br>
 
 ### Berikut adalah hasil mse dari beberapa model yang dipakai :
