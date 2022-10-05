@@ -43,13 +43,15 @@ Solusi yang dilakukan untuk mencapai tujuan dari proyek ini adalah sebagai berik
 
 Dataset yang digunakan pada proyek kali ini adalah : [Crude Oil Nov 22 (CL=F)](https://finance.yahoo.com/quote/CL%3DF/history?p=CL%3DF)
 
-Dataset ini memiliki kolom seperti dataset price stok pada umumnya yaitu 7 kolom ["Date","Open","High","Low","Close","Volume"]. Pada saat ini dataset yang digunakan tak menggandung *missing value*, lalu penjelasan terkait setiap kolom sebagai berikut :
+Dataset ini memiliki kolom seperti dataset price stok pada umumnya yaitu 8 kolom ["Date","Open","High","Low","Close","Volume","Dividend","Stock Splits"]. Pada saat ini dataset yang digunakan tak menggandung *missing value*, lalu penjelasan terkait setiap kolom sebagai berikut :
 - Date : Tanggal perdagangan berlangsung
 - Open : Harga pembukaan pada tanggal perdangangan berlangsung
 - High : Harga tertinggi pada tanggal perdangangan berlangsung
 - Low : Harga terendah pada tanggal perdangangan berlangsung
 - Close : Harga terakhir pada saat perdangan pada hari itu di tutup
 - Volume : Volume transaksi yang terjadi pada tanggal perdagangan berlangsung
+- Dividend : pembagian keuntungan yang diberikan perusahaan atau emiten kepada pemegang saham
+- Stock Splits : pemecahan nilai nominal saham sehingga nilai nominal saham menjadi lebih rendah yang dampaknya adalah meningkatkan jumlah saham beredar suatu perusahaan
 
 ## Exploratory Data Analysis
 
@@ -172,6 +174,10 @@ Kesimpulan dari proyek ini adalah :
 
 - Matthias Feurer and Frank Hutter. Hyperparameter optimization. In: AutoML: Methods, Systems, Challenges, pages 3–38.
 
-- “Saham - PT bursa efek Indonesia.” [Online]. Available: https://www.idx.co.id/produk/saham/. [Accessed: 24-Sep-2022] 
+- “Saham - PT bursa efek Indonesia.” [Online]. Available: https://www.idx.co.id/produk/saham/.
+
+- "Dividen Saham: Arti, Contoh, dan Cara Menghitungnya."[Online]. Available: https://www.cermati.com/artikel/dividen-saham-arti-contoh-dan-cara-menghitungnya.
+
+- "stock split."[Online]. Available: https://www.bareksa.com/kamus/s/stock-split.
 
 - M. M. Kumbure, C. Lohrmann, P. Luukka, and J. Porras, “Machine learning techniques and data for stock market forecasting: A literature review,” Expert Systems with Applications, vol. 197, p. 116659, 2022. 
