@@ -58,7 +58,7 @@ Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita
 - Penanganan outlier
 <br>Visualisasi data yang kita miliki
 
-![output_with_outlier](https://user-images.githubusercontent.com/77862455/193956128-eb0ee208-d042-4460-a6cd-0d37437575b5.png | width=600)
+![output_with_outlier](https://user-images.githubusercontent.com/77862455/193956128-eb0ee208-d042-4460-a6cd-0d37437575b5.png)
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 1. sebelum metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
 
 <br>Berikut visualisasi data yang sudah menerapkan metode IQR dengan menghapus data diluar IQR yaitu antara 25% dan 75%
