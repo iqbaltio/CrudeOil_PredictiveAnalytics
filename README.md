@@ -16,6 +16,7 @@ Teknik forecasting adalah teknik yang menggunakan data yang sudah ada atau data 
 ### Problem Statements
 Merujuk latar belakang yang sudah dipaparkan sebelumnya, bisa kita simpulkan bahwa permasalahan yang diangkat adalah :
 - Bagaimana cara memprediksi harga saham minyak mentah di masa yang akan datang ?
+- Bagaimana cara membantu membuat keputusan yang baik?
 
 ### Goals
 Tujuan dari pembuatan proyek ini adalah :
@@ -42,13 +43,12 @@ Solusi yang dilakukan untuk mencapai tujuan dari proyek ini adalah sebagai berik
 
 Dataset yang digunakan pada proyek kali ini adalah : [Crude Oil Nov 22 (CL=F)](https://finance.yahoo.com/quote/CL%3DF/history?p=CL%3DF)
 
-Dataset ini memiliki kolom seperti dataset price stok pada umumnya yaitu 7 kolom ["Date","Open","High","Low","Close","Adj Close","Volume"]. Pada saat ini dataset yang digunakan tak menggandung *missing value*, lalu penjelasan terkait setiap kolom sebagai berikut :
+Dataset ini memiliki kolom seperti dataset price stok pada umumnya yaitu 7 kolom ["Date","Open","High","Low","Close","Volume"]. Pada saat ini dataset yang digunakan tak menggandung *missing value*, lalu penjelasan terkait setiap kolom sebagai berikut :
 - Date : Tanggal perdagangan berlangsung
 - Open : Harga pembukaan pada tanggal perdangangan berlangsung
 - High : Harga tertinggi pada tanggal perdangangan berlangsung
 - Low : Harga terendah pada tanggal perdangangan berlangsung
 - Close : Harga terakhir pada saat perdangan pada hari itu di tutup
-- Adj Close : Harga penutupan pada hari tersebut setelah disesuaikan
 - Volume : Volume transaksi yang terjadi pada tanggal perdagangan berlangsung
 
 ## Exploratory Data Analysis
@@ -57,7 +57,8 @@ Sebelum kita mengolah data kita alangkah baiknya kita mengekplorasi dataset kita
 
 - Penanganan outlier
 <br>Visualisasi data yang kita miliki
-<image src="https://raw.githubusercontent.com/iqbaltio/CrudeOil_PredictiveAnalytics/master/images/output_with_outlier.png" width=600/>
+
+![output_with_outlier](https://user-images.githubusercontent.com/77862455/193956128-eb0ee208-d042-4460-a6cd-0d37437575b5.png)
 <dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><em>Gambar 1. sebelum metode IQR dijalankan</em></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
 
 <br>Berikut visualisasi data yang sudah menerapkan metode IQR dengan menghapus data diluar IQR yaitu antara 25% dan 75%
@@ -90,7 +91,7 @@ Pada dataset saya kali ini tidak memiliki *Missing Value* sehingga kita tidak pe
 Kita akan membagi dataset kita menjadi train data dan test data sehingga sistem bisa menggunakan train data menjadi training model dan test data sebagai data yang memvalidasi akurat atau tidaknya. Rasio yang digunakan adalah 8:2, 8 train data dan 2 test data
 
 ### Menghapus kolom yang tak digunakan
-Disini saya tidak menghapus kolom apapun karena saya memerlukan semua kolom yang sudah kita lihat dalam visualisasinya diatas.
+Disini saya menghapus kolom dividens dan stock split karena saya tidak memerlukan kolom tersebut.
 
 ## Modeling
 Model yang akan digunakan proyek kali ini yaitu *Gradient Boosting*, *K-Nearest Neighbors*, dan *Random Forest*.
